@@ -3,7 +3,7 @@ Practico 1 de la materia Testing de Sistemas de Internet de las Cosas
 
 Requisitos
 1. Almacena pares clave:valor.
-2.  Las claves deben ser únicas.
+2. Las claves deben ser únicas.
 3. Las claves son cadenas de texto.
 4. Se debe poder recuperar un valor a partir de una clave.
 5. Se debe poder actualizar el valor asociado a una clave.
