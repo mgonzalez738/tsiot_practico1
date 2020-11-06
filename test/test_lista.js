@@ -23,5 +23,14 @@ describe("cuando se agrega un elemmento a una lista vacia" , function() {
     });
 });
 
+describe("cuando se agrega una clave que ya esta en la lista" , function() {
+    var lista = new Lista();
+    lista.add("clave", "valor1");
+    lista.add("clave", "valor2");
+    it("se actualiza el valor correspondiente", function() {
+        assert.equal(lista.find("clave"), "valor2");
+    });
+});
+
 
 

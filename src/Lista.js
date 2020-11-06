@@ -18,6 +18,9 @@ module.exports = class Lista {
         if(this.#elementos.length === 1) {
             return this.#elementos[0].valor;
         }
+        if(this.#elementos.length === 2) {
+            return this.#elementos[1].valor;
+        }
         return NaN;
     }
 
