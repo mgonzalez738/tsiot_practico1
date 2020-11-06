@@ -7,6 +7,9 @@ describe("en una lista vacia" , function() {
     it("hay cero elementos", function() {
         assert.equal(lista.count(), 0);
     });
+    it("no se encuentra ninguna clave", function() {
+        assert.isNaN(lista.find("clave"));
+    });
 });
 
 describe("cuando se agrega un elemmento a una lista vacia" , function() {

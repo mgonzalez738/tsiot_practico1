@@ -14,4 +14,8 @@ module.exports = class Lista {
         this.#elementos.push({clave, valor});
     }
 
+    find(clave) {
+        return NaN;
+    }
+
 }
