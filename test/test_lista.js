@@ -18,6 +18,9 @@ describe("cuando se agrega un elemmento a una lista vacia" , function() {
     it("hay un elemento", function() {
         assert.equal(lista.count(), 1);
     });
+    it("se puede recuperar un elemento a partir de la clave", function() {
+        assert.equal(lista.find("clave"), "valor");
+    });
 });
 
 
