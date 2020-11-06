@@ -21,6 +21,9 @@ describe("cuando se agrega un elemmento a una lista vacia" , function() {
     it("se puede recuperar un elemento a partir de la clave", function() {
         assert.equal(lista.find("clave"), "valor");
     });
+    it("la lista de claves esta ordenada", function() {
+        assert.equal(lista.getKeys()[0], "clave");
+    });
 });
 
 describe("cuando se agrega una clave que ya esta en la lista" , function() {

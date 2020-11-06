@@ -24,4 +24,8 @@ module.exports = class Lista {
         return NaN;
     }
 
+    getKeys() {
+        return ["clave"];
+    }
+
 }

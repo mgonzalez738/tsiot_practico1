@@ -17,7 +17,7 @@ Pruebas
 3. En una lista vacía no se encuentra ninguna clave.
 4. Cuando se agrega un elemento a una lista vacía se puede recuperar el valor a partir de la clave.
 5. Cuando se agrega una clave que ya está en la lista se actualiza el valor correspondiente.
-6. Cuando se agregan un elemento a una lista vacía la lista de claves esta ordenada.
+6. Cuando se agrega un elemento a una lista vacía la lista de claves esta ordenada.
 7. Cuando se agrega un elemento al principio la lista de claves esta ordenada.
 8. Cuando se agrega un elemento al final la lista de claves esta ordenada.
 9. Almacena pares clave:valor.
