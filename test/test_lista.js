@@ -35,5 +35,16 @@ describe("cuando se agrega una clave que ya esta en la lista" , function() {
     });
 });
 
+describe("cuando se agrega un elemento al principio" , function() {
+    var lista = new Lista();
+    lista.add("clave1", "valor1");
+    lista.unshift("clave2", "valor2");
+    it("la lista de claves esta ordenada", function() {
+        assert.equal(lista.getKeys()[0] === "clave1" & lista.getKeys()[1] === "clave2", true, "Not ordered");
+    });
+});
+
+
+
 
 
