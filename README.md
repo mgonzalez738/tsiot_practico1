@@ -1,5 +1,5 @@
-# tsiot_practico1
-Practico 1 de la materia Testing de Sistemas de Internet de las Cosas
+# tsiot_practico2
+Practico 2 de la materia Testing de Sistemas de Internet de las Cosas
 
 Requisitos
 1. Almacena pares clave:valor.
