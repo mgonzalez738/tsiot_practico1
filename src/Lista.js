@@ -10,28 +10,38 @@ module.exports = class Lista {
         return this.#elementos.length;;
     }
 
-    add(clave, valor) {
-        this.#elementos.push({clave, valor});
+    push(clave, valor) {
+        for(let i=0; i<this.#elementos.length; i++) {
+            if(this.#elementos[i][clave]) {
+                this.#elementos[i][clave] = valor;
+                return;
+            }
+        }
+        var elemento = {};
+        elemento[clave] = valor;
+        this.#elementos.push(elemento);
+        console.log(this.#elementos);
     }
 
     unshift(clave, valor) {
-        this.#elementos.unshift({clave, valor});
+        var elemento = {};
+        elemento[clave] = valor;
+        this.#elementos.unshift(elemento);
     }
 
     find(clave) {
-        if(this.#elementos.length === 1) {
-            return this.#elementos[0].valor;
-        }
-        if(this.#elementos.length === 2) {
-            return this.#elementos[1].valor;
-        }
-        return NaN;
+        if(this.#elementos.length === 0)
+            return NaN;
+        let elemento = this.#elementos.find(el => Object.keys(el)[0] === clave);
+        return elemento[clave]; 
     }
 
     getKeys() {
-        if(this.#elementos.length === 2)
-            return ["clave1", "clave2"];
-        return ["clave"];
+        var claves = [];
+        for (let elemento of this.#elementos) {
+            claves.push(Object.keys(elemento)[0]);
+        }
+        return claves.sort();
     }
 
 }

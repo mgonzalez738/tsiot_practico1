@@ -14,7 +14,7 @@ describe("en una lista vacia" , function() {
 
 describe("cuando se agrega un elemmento a una lista vacia" , function() {
     var lista = new Lista();
-    lista.add("clave", "valor");
+    lista.push("clave", "valor");
     it("hay un elemento", function() {
         assert.equal(lista.count(), 1);
     });
@@ -26,10 +26,10 @@ describe("cuando se agrega un elemmento a una lista vacia" , function() {
     });
 });
 
-describe("cuando se agrega una clave que ya esta en la lista" , function() {
+describe("cuando se agrega una clave al final que ya esta en la lista" , function() {
     var lista = new Lista();
-    lista.add("clave", "valor1");
-    lista.add("clave", "valor2");
+    lista.push("clave", "valor1");
+    lista.push("clave", "valor2");
     it("se actualiza el valor correspondiente", function() {
         assert.equal(lista.find("clave"), "valor2");
     });
@@ -37,10 +37,19 @@ describe("cuando se agrega una clave que ya esta en la lista" , function() {
 
 describe("cuando se agrega un elemento al principio" , function() {
     var lista = new Lista();
-    lista.add("clave1", "valor1");
+    lista.push("clave1", "valor1");
     lista.unshift("clave2", "valor2");
     it("la lista de claves esta ordenada", function() {
         assert.equal(lista.getKeys()[0] === "clave1" & lista.getKeys()[1] === "clave2", true, "Not ordered");
+    });
+});
+
+describe("cuando se agrega un elemento al final" , function() {
+    var lista = new Lista();
+    lista.push("claveB", "valorB");
+    lista.push("claveA", "valorA");
+    it("la lista de claves esta ordenada", function() {
+        assert.equal(lista.getKeys()[0] === "claveA" & lista.getKeys()[1] === "claveB", true, "Not ordered");
     });
 });
 
