@@ -53,6 +53,14 @@ describe("cuando se agrega un elemento al final" , function() {
     });
 });
 
+describe("cuando no se encuentra la clave buscada en la lista" , function() {
+    var lista = new Lista();
+    lista.push("clave1", "valor1");
+    it("devuelve NaN como valor", function() {
+        assert.isNaN(lista.find("clave2"));
+    });
+});
+
 
 
 

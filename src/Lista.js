@@ -20,7 +20,6 @@ module.exports = class Lista {
         var elemento = {};
         elemento[clave] = valor;
         this.#elementos.push(elemento);
-        console.log(this.#elementos);
     }
 
     unshift(clave, valor) {
@@ -33,6 +32,8 @@ module.exports = class Lista {
         if(this.#elementos.length === 0)
             return NaN;
         let elemento = this.#elementos.find(el => Object.keys(el)[0] === clave);
+        if(!elemento)
+        return NaN;
         return elemento[clave]; 
     }
 
