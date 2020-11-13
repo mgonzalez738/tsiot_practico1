@@ -61,6 +61,15 @@ describe("cuando no se encuentra la clave buscada en la lista" , function() {
     });
 });
 
+describe("cuando se agrega una clave al principio que ya esta en la lista" , function() {
+    var lista = new Lista();
+    lista.unshift("clave", "valor1");
+    lista.unshift("clave", "valor2");
+    it("se actualiza el valor correspondiente", function() {
+        assert.equal(lista.find("clave"), "valor2");
+    });
+});
+
 
 
 

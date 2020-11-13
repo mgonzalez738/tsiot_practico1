@@ -16,10 +16,10 @@ Pruebas
 2. Cuando se agrega un elemento a una lista vacía hay un elemento.
 3. En una lista vacía no se encuentra ninguna clave.
 4. Cuando se agrega un elemento a una lista vacía se puede recuperar el valor a partir de la clave.
-5. Cuando se agrega una clave al principio que ya está en la lista se actualiza el valor correspondiente.
+5. Cuando se agrega una clave al final que ya está en la lista se actualiza el valor correspondiente.
 6. Cuando se agrega un elemento a una lista vacía la lista de claves esta ordenada.
 7. Cuando se agrega un elemento al principio la lista de claves esta ordenada.
 8. Cuando se agrega un elemento al final la lista de claves esta ordenada.
 9. Cuando no se encuentra la clave buscada en la lista devuelve NaN como valor.
-10. Cuando se agrega una clave al final que ya está en la lista se actualiza el valor correspondiente.
+10. Cuando se agrega una clave al principio que ya está en la lista se actualiza el valor correspondiente.
 

@@ -23,6 +23,12 @@ module.exports = class Lista {
     }
 
     unshift(clave, valor) {
+        for(let i=0; i<this.#elementos.length; i++) {
+            if(this.#elementos[i][clave]) {
+                this.#elementos[i][clave] = valor;
+                return;
+            }
+        }
         var elemento = {};
         elemento[clave] = valor;
         this.#elementos.unshift(elemento);
