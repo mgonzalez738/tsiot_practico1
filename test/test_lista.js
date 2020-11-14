@@ -70,6 +70,15 @@ describe("cuando se agrega una clave al principio que ya esta en la lista" , fun
     });
 });
 
+describe("cuando se elimina un elemento de la lista" , function() {
+    var lista = new Lista();
+    lista.push("clave", "valor");
+    lista.delete("clave");
+    it("el elemento no se encuentra en la lista", function() {
+        assert.isNaN(lista.find("clave"));
+    });
+});
+
 
 
 

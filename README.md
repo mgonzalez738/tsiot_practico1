@@ -22,4 +22,4 @@ Pruebas
 8. Cuando se agrega un elemento al final la lista de claves esta ordenada.
 9. Cuando no se encuentra la clave buscada en la lista devuelve NaN como valor.
 10. Cuando se agrega una clave al principio que ya está en la lista se actualiza el valor correspondiente.
-
+11. Cuando se elimina un elemento de la lista el elemento no se encuentra en la lista.
